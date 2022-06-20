@@ -27,3 +27,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: display vars from parent workflow
+        run: |
+          echo "ReusableWorkflow: ${{ env.VERSION }}"
+          echo "ReusableWorkflow: ${{ env.TENANT }}"
